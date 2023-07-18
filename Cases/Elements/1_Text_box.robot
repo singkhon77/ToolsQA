@@ -20,9 +20,7 @@ Go to Elements Menu
     Click   //div/h5[text()='Elements']
     Page Should Contain Element    //div/div/div[text()='Elements']
     Page Should Contain     Please select an item from left to start practice
-#Click Element Side tab
-#    Click   //div[@class='header-wrapper']/div[text()='Elements']
-#    Sleep   1s
+
 Click Text Box tab
     Click   //span[text()='Text Box']
     Page Should Contain Element   //div/div/div[1]/div[text()='Text Box']

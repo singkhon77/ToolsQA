@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation  Practice Automation Test
 Library  SeleniumLibrary
+Library  String
 
 *** Keywords ***
 Open Web
