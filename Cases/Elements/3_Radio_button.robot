@@ -26,7 +26,7 @@ Go to Elements Menu
     Click   //div/h5[text()='Elements']
     Page Should Contain Element    //div/div/div[text()='Elements']
     Page Should Contain     Please select an item from left to start practice
-Click Text Box tab
+Click Radio btn tab
     Click   //span[text()='Radio Button']
     Page Should Contain Element   //div/div/div[1]/div[text()='Radio Button']
 Disabled Choice
