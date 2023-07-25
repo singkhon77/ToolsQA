@@ -9,7 +9,7 @@ Open Web
 #    Maximize Browser Window
 
 Close Web
-    Close Browser
+    Close All Browsers
 
 Click
     [Arguments]     ${Locator}
