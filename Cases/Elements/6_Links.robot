@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation  Test TextBox Elements
+Documentation  Test Link
 Resource  ../../Resources/Resource.robot
 Suite Setup     Open Web
 Suite Teardown  Close Web
