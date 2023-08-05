@@ -1,13 +1,14 @@
 *** Settings ***
 Documentation  Practice Automation Test
 Library  SeleniumLibrary
+Library  RequestsLibrary
 Library  String
+Library  OperatingSystem
 
 *** Keywords ***
 Open Web
     Open Browser       ${url}      firefox
 #    Maximize Browser Window
-
 Close Web
     Close All Browsers
 
