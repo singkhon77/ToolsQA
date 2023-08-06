@@ -71,6 +71,7 @@ Input Form
     Press Keys  None    RETURN
 
 #    Submit form
+    Sleep   1s
     Press Keys  None    RETURN
 #    Verify values in table
     Wait Until Page Contains     Thanks for submitting the form
