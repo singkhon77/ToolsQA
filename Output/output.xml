@@ -1,96 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.3 on darwin)" generated="20230715 23:48:47.047" rpa="false" schemaversion="3">
-<suite id="s1" name="1 Text box" source="/Users/macbookpro/PycharmProjects/ToolsQA/Cases/Elements/1_Text_box.robot">
+<robot generator="Robot 6.0.2 (Python 3.11.3 on darwin)" generated="20230806 21:39:43.479" rpa="false" schemaversion="3">
+<suite id="s1" name="Practice Form" source="/Users/macbookpro/PycharmProjects/ToolsQA/Cases/Forms/Practice_Form.robot">
 <kw name="Open Web" library="Resource" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>firefox</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230715 23:48:47.312" level="INFO">Opening browser 'firefox' to base url 'https://demoqa.com'.</msg>
-<msg timestamp="20230715 23:48:47.314" level="INFO">Firefox driver log is always forced to to: /Users/macbookpro/PycharmProjects/ToolsQA/OUTPUT/geckodriver-31.log</msg>
-<status status="PASS" starttime="20230715 23:48:47.312" endtime="20230715 23:49:09.512"/>
+<msg timestamp="20230806 21:39:43.791" level="INFO">Opening browser 'firefox' to base url 'https://demoqa.com'.</msg>
+<msg timestamp="20230806 21:39:43.796" level="INFO">Firefox driver log is always forced to to: /Users/macbookpro/PycharmProjects/ToolsQA/OUTPUT/geckodriver-274.log</msg>
+<status status="PASS" starttime="20230806 21:39:43.791" endtime="20230806 21:39:54.127"/>
 </kw>
-<status status="PASS" starttime="20230715 23:48:47.312" endtime="20230715 23:49:09.512"/>
+<status status="PASS" starttime="20230806 21:39:43.790" endtime="20230806 21:39:54.128"/>
 </kw>
-<test id="s1-t1" name="Verify Home Page" line="17">
+<test id="s1-t1" name="Verify Home Page" line="21">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>//a/img[@src='/images/Toolsqa.jpg']</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230715 23:49:09.513" endtime="20230715 23:49:09.526"/>
+<status status="PASS" starttime="20230806 21:39:54.129" endtime="20230806 21:39:54.141"/>
 </kw>
-<status status="PASS" starttime="20230715 23:49:09.512" endtime="20230715 23:49:09.526"/>
+<status status="PASS" starttime="20230806 21:39:54.128" endtime="20230806 21:39:54.141"/>
 </test>
-<test id="s1-t2" name="Go to Elements Menu" line="19">
+<test id="s1-t2" name="Go to Elements Menu" line="23">
 <kw name="Click" library="Resource">
-<arg>//div/h5[text()='Elements']</arg>
+<arg>//div/h5[text()='Forms']</arg>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${Locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230715 23:49:09.527" endtime="20230715 23:49:09.531"/>
+<status status="PASS" starttime="20230806 21:39:54.142" endtime="20230806 21:39:54.146"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230715 23:49:09.531" level="INFO">Clicking element '//div/h5[text()='Elements']'.</msg>
-<status status="PASS" starttime="20230715 23:49:09.531" endtime="20230715 23:49:09.816"/>
+<msg timestamp="20230806 21:39:54.146" level="INFO">Clicking element '//div/h5[text()='Forms']'.</msg>
+<status status="PASS" starttime="20230806 21:39:54.146" endtime="20230806 21:39:54.415"/>
 </kw>
-<status status="PASS" starttime="20230715 23:49:09.527" endtime="20230715 23:49:09.816"/>
+<status status="PASS" starttime="20230806 21:39:54.142" endtime="20230806 21:39:54.415"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>//div/div/div[text()='Elements']</arg>
+<arg>//div/div/div[text()='Forms']</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20230715 23:49:09.819" level="INFO">Current page contains element '//div/div/div[text()='Elements']'.</msg>
-<status status="PASS" starttime="20230715 23:49:09.816" endtime="20230715 23:49:09.819"/>
+<msg timestamp="20230806 21:39:54.418" level="INFO">Current page contains element '//div/div/div[text()='Forms']'.</msg>
+<status status="PASS" starttime="20230806 21:39:54.415" endtime="20230806 21:39:54.418"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Please select an item from left to start practice</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20230715 23:49:09.827" level="INFO">Current page contains text 'Please select an item from left to start practice'.</msg>
-<status status="PASS" starttime="20230715 23:49:09.819" endtime="20230715 23:49:09.827"/>
+<msg timestamp="20230806 21:39:54.424" level="INFO">Current page contains text 'Please select an item from left to start practice'.</msg>
+<status status="PASS" starttime="20230806 21:39:54.418" endtime="20230806 21:39:54.424"/>
 </kw>
-<status status="PASS" starttime="20230715 23:49:09.527" endtime="20230715 23:49:09.827"/>
+<status status="PASS" starttime="20230806 21:39:54.142" endtime="20230806 21:39:54.424"/>
 </test>
-<test id="s1-t3" name="Click Text Box tab" line="26">
+<test id="s1-t3" name="Click Dynamic Properties tab" line="27">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230806 21:39:54.425" level="INFO">Executing JavaScript:
+window.scrollTo(0,500)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230806 21:39:54.425" endtime="20230806 21:39:54.428"/>
+</kw>
 <kw name="Click" library="Resource">
-<arg>//span[text()='Text Box']</arg>
+<arg>//span[text()='Practice Form']</arg>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${Locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230715 23:49:09.828" endtime="20230715 23:49:09.831"/>
+<status status="PASS" starttime="20230806 21:39:54.429" endtime="20230806 21:39:54.431"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230715 23:49:09.832" level="INFO">Clicking element '//span[text()='Text Box']'.</msg>
-<status status="PASS" starttime="20230715 23:49:09.831" endtime="20230715 23:49:10.070"/>
+<msg timestamp="20230806 21:39:54.432" level="INFO">Clicking element '//span[text()='Practice Form']'.</msg>
+<status status="PASS" starttime="20230806 21:39:54.431" endtime="20230806 21:39:54.694"/>
 </kw>
-<status status="PASS" starttime="20230715 23:49:09.828" endtime="20230715 23:49:10.070"/>
+<status status="PASS" starttime="20230806 21:39:54.428" endtime="20230806 21:39:54.694"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>//div/div/div[1]/div[text()='Text Box']</arg>
+<arg>//div/div/div[1]/div[text()='Practice Form']</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20230715 23:49:10.119" level="INFO">Current page contains element '//div/div/div[1]/div[text()='Text Box']'.</msg>
-<status status="PASS" starttime="20230715 23:49:10.070" endtime="20230715 23:49:10.119"/>
+<msg timestamp="20230806 21:39:54.702" level="INFO">Current page contains element '//div/div/div[1]/div[text()='Practice Form']'.</msg>
+<status status="PASS" starttime="20230806 21:39:54.694" endtime="20230806 21:39:54.702"/>
 </kw>
-<status status="PASS" starttime="20230715 23:49:09.828" endtime="20230715 23:49:10.120"/>
+<status status="PASS" starttime="20230806 21:39:54.424" endtime="20230806 21:39:54.703"/>
 </test>
-<test id="s1-t4" name="Input Form" line="29">
+<test id="s1-t4" name="Input Form" line="31">
 <kw name="Input" library="Resource">
-<arg>//input[@id='userName']</arg>
+<arg>//input[@id='firstName']</arg>
 <arg>${name}</arg>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${Locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230715 23:49:10.123" endtime="20230715 23:49:10.141"/>
+<status status="PASS" starttime="20230806 21:39:54.704" endtime="20230806 21:39:54.715"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230715 23:49:10.142" level="INFO">Typing text 'TestName' into text field '//input[@id='userName']'.</msg>
-<status status="PASS" starttime="20230715 23:49:10.141" endtime="20230715 23:49:10.276"/>
+<msg timestamp="20230806 21:39:54.716" level="INFO">Typing text 'SK' into text field '//input[@id='firstName']'.</msg>
+<status status="PASS" starttime="20230806 21:39:54.715" endtime="20230806 21:39:54.766"/>
 </kw>
-<status status="PASS" starttime="20230715 23:49:10.123" endtime="20230715 23:49:10.276"/>
+<status status="PASS" starttime="20230806 21:39:54.704" endtime="20230806 21:39:54.766"/>
+</kw>
+<kw name="Input" library="Resource">
+<arg>//input[@id='lastName']</arg>
+<arg>${last_name}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230806 21:39:54.767" endtime="20230806 21:39:54.773"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230806 21:39:54.773" level="INFO">Typing text 'KT' into text field '//input[@id='lastName']'.</msg>
+<status status="PASS" starttime="20230806 21:39:54.773" endtime="20230806 21:39:54.829"/>
+</kw>
+<status status="PASS" starttime="20230806 21:39:54.766" endtime="20230806 21:39:54.829"/>
 </kw>
 <kw name="Input" library="Resource">
 <arg>//input[@id='userEmail']</arg>
@@ -98,126 +123,426 @@
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${Locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230715 23:49:10.277" endtime="20230715 23:49:10.290"/>
+<status status="PASS" starttime="20230806 21:39:54.830" endtime="20230806 21:39:54.846"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230715 23:49:10.292" level="INFO">Typing text 'Email@test.com' into text field '//input[@id='userEmail']'.</msg>
-<status status="PASS" starttime="20230715 23:49:10.290" endtime="20230715 23:49:10.330"/>
+<msg timestamp="20230806 21:39:54.846" level="INFO">Typing text 'SK@test.com' into text field '//input[@id='userEmail']'.</msg>
+<status status="PASS" starttime="20230806 21:39:54.846" endtime="20230806 21:39:54.980"/>
 </kw>
-<status status="PASS" starttime="20230715 23:49:10.276" endtime="20230715 23:49:10.330"/>
-</kw>
-<kw name="Input" library="Resource">
-<arg>//textarea[@id='currentAddress']</arg>
-<arg>${Current_Add}</arg>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${Locator}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230715 23:49:10.330" endtime="20230715 23:49:10.334"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230715 23:49:10.335" level="INFO">Typing text '123 St.123 Destin FL 12345' into text field '//textarea[@id='currentAddress']'.</msg>
-<status status="PASS" starttime="20230715 23:49:10.334" endtime="20230715 23:49:10.374"/>
-</kw>
-<status status="PASS" starttime="20230715 23:49:10.330" endtime="20230715 23:49:10.374"/>
-</kw>
-<kw name="Input" library="Resource">
-<arg>//textarea[@id='permanentAddress']</arg>
-<arg>${Permanent_Add}</arg>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${Locator}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230715 23:49:10.374" endtime="20230715 23:49:10.378"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${locator}</arg>
-<arg>${text}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230715 23:49:10.379" level="INFO">Typing text 'Same As Current Address' into text field '//textarea[@id='permanentAddress']'.</msg>
-<status status="PASS" starttime="20230715 23:49:10.379" endtime="20230715 23:49:10.420"/>
-</kw>
-<status status="PASS" starttime="20230715 23:49:10.374" endtime="20230715 23:49:10.420"/>
-</kw>
-<kw name="Execute Javascript" library="SeleniumLibrary">
-<arg>window.scrollTo(0,100)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20230715 23:49:10.422" level="INFO">Executing JavaScript:
-window.scrollTo(0,100)
-Without any arguments.</msg>
-<status status="PASS" starttime="20230715 23:49:10.421" endtime="20230715 23:49:10.431"/>
+<status status="PASS" starttime="20230806 21:39:54.829" endtime="20230806 21:39:54.980"/>
 </kw>
 <kw name="Click" library="Resource">
-<arg>//button[@id='submit']</arg>
+<arg>//div/label[text()='Male']</arg>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${Locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230715 23:49:10.432" endtime="20230715 23:49:10.435"/>
+<status status="PASS" starttime="20230806 21:39:54.980" endtime="20230806 21:39:54.992"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230715 23:49:10.435" level="INFO">Clicking element '//button[@id='submit']'.</msg>
-<status status="PASS" starttime="20230715 23:49:10.435" endtime="20230715 23:49:10.659"/>
+<msg timestamp="20230806 21:39:54.993" level="INFO">Clicking element '//div/label[text()='Male']'.</msg>
+<status status="PASS" starttime="20230806 21:39:54.992" endtime="20230806 21:39:55.374"/>
 </kw>
-<status status="PASS" starttime="20230715 23:49:10.431" endtime="20230715 23:49:10.659"/>
+<status status="PASS" starttime="20230806 21:39:54.980" endtime="20230806 21:39:55.374"/>
 </kw>
-<status status="PASS" starttime="20230715 23:49:10.122" endtime="20230715 23:49:10.659"/>
-</test>
-<test id="s1-t5" name="Verify input text" line="41">
+<kw name="Input" library="Resource">
+<arg>//input[@id='userNumber']</arg>
+<arg>${phone_num}</arg>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>//*[@id="output"]/div[1]/p[4]</arg>
+<arg>${Locator}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230715 23:49:10.661" endtime="20230715 23:49:10.669"/>
+<status status="PASS" starttime="20230806 21:39:55.375" endtime="20230806 21:39:55.387"/>
 </kw>
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>Name:${name}</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20230715 23:49:11.100" level="INFO">Current page contains text 'Name:TestName'.</msg>
-<status status="PASS" starttime="20230715 23:49:10.670" endtime="20230715 23:49:11.100"/>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230806 21:39:55.388" level="INFO">Typing text '0987654321' into text field '//input[@id='userNumber']'.</msg>
+<status status="PASS" starttime="20230806 21:39:55.387" endtime="20230806 21:39:55.552"/>
 </kw>
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>Email:${email}</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20230715 23:49:11.115" level="INFO">Current page contains text 'Email:Email@test.com'.</msg>
-<status status="PASS" starttime="20230715 23:49:11.100" endtime="20230715 23:49:11.115"/>
+<status status="PASS" starttime="20230806 21:39:55.375" endtime="20230806 21:39:55.552"/>
 </kw>
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>Current Address :${Current_Add}</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20230715 23:49:11.148" level="INFO">Current page contains text 'Current Address :123 St.123 Destin FL 12345'.</msg>
-<status status="PASS" starttime="20230715 23:49:11.115" endtime="20230715 23:49:11.148"/>
+<kw name="Click" library="Resource">
+<arg>//div/input[@id='dateOfBirthInput']</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230806 21:39:55.553" endtime="20230806 21:39:55.556"/>
 </kw>
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>Permananet Address :${Permanent_Add}</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20230715 23:49:11.163" level="INFO">Current page contains text 'Permananet Address :Same As Current Address'.</msg>
-<status status="PASS" starttime="20230715 23:49:11.148" endtime="20230715 23:49:11.163"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230806 21:39:55.556" level="INFO">Clicking element '//div/input[@id='dateOfBirthInput']'.</msg>
+<status status="PASS" starttime="20230806 21:39:55.556" endtime="20230806 21:39:55.953"/>
 </kw>
-<status status="PASS" starttime="20230715 23:49:10.660" endtime="20230715 23:49:11.163"/>
+<status status="PASS" starttime="20230806 21:39:55.552" endtime="20230806 21:39:55.953"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>//div/div[1]/select</arg>
+<arg>8</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20230806 21:39:55.954" level="INFO">Selecting options from selection list '//div/div[1]/select' by index 8.</msg>
+<status status="PASS" starttime="20230806 21:39:55.954" endtime="20230806 21:39:56.454"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>//div/div[2]/select</arg>
+<arg>140</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20230806 21:39:56.455" level="INFO">Selecting options from selection list '//div/div[2]/select' by index 140.</msg>
+<status status="PASS" starttime="20230806 21:39:56.454" endtime="20230806 21:39:58.130"/>
+</kw>
+<kw name="Click" library="Resource">
+<arg>//div[3]/div[text()='11']</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230806 21:39:58.131" endtime="20230806 21:39:58.134"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230806 21:39:58.134" level="INFO">Clicking element '//div[3]/div[text()='11']'.</msg>
+<status status="PASS" starttime="20230806 21:39:58.134" endtime="20230806 21:39:58.402"/>
+</kw>
+<status status="PASS" starttime="20230806 21:39:58.131" endtime="20230806 21:39:58.402"/>
+</kw>
+<kw name="Click" library="Resource">
+<arg>//div[@id='subjectsWrapper']/div[2]</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230806 21:39:58.403" endtime="20230806 21:39:58.406"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230806 21:39:58.407" level="INFO">Clicking element '//div[@id='subjectsWrapper']/div[2]'.</msg>
+<status status="PASS" starttime="20230806 21:39:58.406" endtime="20230806 21:39:58.630"/>
+</kw>
+<status status="PASS" starttime="20230806 21:39:58.403" endtime="20230806 21:39:58.630"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>C+o+m</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230806 21:39:58.631" level="INFO">Sending key(s) ('C+o+m',) to page.</msg>
+<msg timestamp="20230806 21:39:58.631" level="INFO">Sending key C</msg>
+<msg timestamp="20230806 21:39:58.631" level="INFO">Sending key o</msg>
+<msg timestamp="20230806 21:39:58.632" level="INFO">Sending key m</msg>
+<status status="PASS" starttime="20230806 21:39:58.631" endtime="20230806 21:39:58.659"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230806 21:39:59.660" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230806 21:39:58.659" endtime="20230806 21:39:59.660"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230806 21:39:59.661" level="INFO">Sending key(s) ('RETURN',) to page.</msg>
+<msg timestamp="20230806 21:39:59.661" level="INFO">Pressing special key RETURN to browser.</msg>
+<msg timestamp="20230806 21:39:59.662" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20230806 21:39:59.660" endtime="20230806 21:39:59.677"/>
+</kw>
+<kw name="Click" library="Resource">
+<arg>//div[7]/div[2]/div[1]/label</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230806 21:39:59.677" endtime="20230806 21:39:59.680"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230806 21:39:59.680" level="INFO">Clicking element '//div[7]/div[2]/div[1]/label'.</msg>
+<status status="PASS" starttime="20230806 21:39:59.680" endtime="20230806 21:39:59.901"/>
+</kw>
+<status status="PASS" starttime="20230806 21:39:59.677" endtime="20230806 21:39:59.901"/>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>//input[@id='hobbies-checkbox-1']</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<msg timestamp="20230806 21:39:59.902" level="INFO">Verifying checkbox '//input[@id='hobbies-checkbox-1']' is selected.</msg>
+<status status="PASS" starttime="20230806 21:39:59.901" endtime="20230806 21:39:59.918"/>
+</kw>
+<kw name="Click" library="Resource">
+<arg>//div[7]/div[2]/div[3]/label</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230806 21:39:59.918" endtime="20230806 21:39:59.920"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230806 21:39:59.921" level="INFO">Clicking element '//div[7]/div[2]/div[3]/label'.</msg>
+<status status="PASS" starttime="20230806 21:39:59.921" endtime="20230806 21:40:00.146"/>
+</kw>
+<status status="PASS" starttime="20230806 21:39:59.918" endtime="20230806 21:40:00.146"/>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>//input[@id='hobbies-checkbox-3']</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<msg timestamp="20230806 21:40:00.146" level="INFO">Verifying checkbox '//input[@id='hobbies-checkbox-3']' is selected.</msg>
+<status status="PASS" starttime="20230806 21:40:00.146" endtime="20230806 21:40:00.161"/>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<arg>//input[@id='uploadPicture']</arg>
+<arg>${upload_file_path}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20230806 21:40:00.162" level="INFO">Sending /Users/macbookpro/PycharmProjects/ToolsQA/Resources/test.png to browser.</msg>
+<status status="PASS" starttime="20230806 21:40:00.161" endtime="20230806 21:40:00.172"/>
+</kw>
+<kw name="Input" library="Resource">
+<arg>//div/textarea[@id='currentAddress']</arg>
+<arg>${address}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230806 21:40:00.175" endtime="20230806 21:40:00.177"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230806 21:40:00.178" level="INFO">Typing text '123 FL USA 54321' into text field '//div/textarea[@id='currentAddress']'.</msg>
+<status status="PASS" starttime="20230806 21:40:00.178" endtime="20230806 21:40:00.202"/>
+</kw>
+<status status="PASS" starttime="20230806 21:40:00.174" endtime="20230806 21:40:00.202"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0,300)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230806 21:40:00.203" level="INFO">Executing JavaScript:
+window.scrollTo(0,300)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230806 21:40:00.202" endtime="20230806 21:40:00.206"/>
+</kw>
+<kw name="Click" library="Resource">
+<arg>//div[text()='Select State']</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230806 21:40:00.206" endtime="20230806 21:40:00.208"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230806 21:40:00.209" level="INFO">Clicking element '//div[text()='Select State']'.</msg>
+<status status="PASS" starttime="20230806 21:40:00.208" endtime="20230806 21:40:00.921"/>
+</kw>
+<status status="PASS" starttime="20230806 21:40:00.206" endtime="20230806 21:40:00.921"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>N+C+R</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230806 21:40:00.922" level="INFO">Sending key(s) ('N+C+R',) to page.</msg>
+<msg timestamp="20230806 21:40:00.922" level="INFO">Sending key N</msg>
+<msg timestamp="20230806 21:40:00.922" level="INFO">Sending key C</msg>
+<msg timestamp="20230806 21:40:00.922" level="INFO">Sending key R</msg>
+<status status="PASS" starttime="20230806 21:40:00.921" endtime="20230806 21:40:00.944"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230806 21:40:01.946" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230806 21:40:00.944" endtime="20230806 21:40:01.947"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230806 21:40:01.949" level="INFO">Sending key(s) ('RETURN',) to page.</msg>
+<msg timestamp="20230806 21:40:01.949" level="INFO">Pressing special key RETURN to browser.</msg>
+<msg timestamp="20230806 21:40:01.949" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20230806 21:40:01.947" endtime="20230806 21:40:01.984"/>
+</kw>
+<kw name="Click" library="Resource">
+<arg>//div[text()='Select City']</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230806 21:40:01.984" endtime="20230806 21:40:01.989"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230806 21:40:01.989" level="INFO">Clicking element '//div[text()='Select City']'.</msg>
+<status status="PASS" starttime="20230806 21:40:01.989" endtime="20230806 21:40:02.222"/>
+</kw>
+<status status="PASS" starttime="20230806 21:40:01.984" endtime="20230806 21:40:02.222"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>D+e+l</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230806 21:40:02.222" level="INFO">Sending key(s) ('D+e+l',) to page.</msg>
+<msg timestamp="20230806 21:40:02.223" level="INFO">Sending key D</msg>
+<msg timestamp="20230806 21:40:02.223" level="INFO">Sending key e</msg>
+<msg timestamp="20230806 21:40:02.223" level="INFO">Sending key l</msg>
+<status status="PASS" starttime="20230806 21:40:02.222" endtime="20230806 21:40:02.241"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230806 21:40:03.243" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230806 21:40:02.241" endtime="20230806 21:40:03.243"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230806 21:40:03.245" level="INFO">Sending key(s) ('RETURN',) to page.</msg>
+<msg timestamp="20230806 21:40:03.245" level="INFO">Pressing special key RETURN to browser.</msg>
+<msg timestamp="20230806 21:40:03.245" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20230806 21:40:03.243" endtime="20230806 21:40:03.258"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230806 21:40:03.258" level="INFO">Sending key(s) ('RETURN',) to page.</msg>
+<msg timestamp="20230806 21:40:03.259" level="INFO">Pressing special key RETURN to browser.</msg>
+<msg timestamp="20230806 21:40:03.259" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20230806 21:40:03.258" endtime="20230806 21:40:03.291"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Thanks for submitting the form</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230806 21:40:03.291" endtime="20230806 21:40:03.294"/>
+</kw>
+<kw name="Table Header Should Contain" library="SeleniumLibrary">
+<arg>//div/table</arg>
+<arg>Label</arg>
+<doc>Verifies table header contains text ``expected``.</doc>
+<status status="PASS" starttime="20230806 21:40:03.294" endtime="20230806 21:40:03.319"/>
+</kw>
+<kw name="Table Header Should Contain" library="SeleniumLibrary">
+<arg>//div/table</arg>
+<arg>Values</arg>
+<doc>Verifies table header contains text ``expected``.</doc>
+<status status="PASS" starttime="20230806 21:40:03.320" endtime="20230806 21:40:03.343"/>
+</kw>
+<kw name="Table Cell Should Contain" library="SeleniumLibrary">
+<arg>locator=//div/table</arg>
+<arg>row=2</arg>
+<arg>column=2</arg>
+<arg>expected=${name} ${last_name}</arg>
+<doc>Verifies table cell contains text ``expected``.</doc>
+<msg timestamp="20230806 21:40:03.362" level="INFO">Table cell contains 'SK KT'.</msg>
+<status status="PASS" starttime="20230806 21:40:03.343" endtime="20230806 21:40:03.362"/>
+</kw>
+<kw name="Table Cell Should Contain" library="SeleniumLibrary">
+<arg>locator=//div/table</arg>
+<arg>row=3</arg>
+<arg>column=2</arg>
+<arg>expected=${email}</arg>
+<doc>Verifies table cell contains text ``expected``.</doc>
+<msg timestamp="20230806 21:40:03.381" level="INFO">Table cell contains 'SK@test.com'.</msg>
+<status status="PASS" starttime="20230806 21:40:03.363" endtime="20230806 21:40:03.382"/>
+</kw>
+<kw name="Table Cell Should Contain" library="SeleniumLibrary">
+<arg>locator=//div/table</arg>
+<arg>row=4</arg>
+<arg>column=2</arg>
+<arg>expected=Male</arg>
+<doc>Verifies table cell contains text ``expected``.</doc>
+<msg timestamp="20230806 21:40:03.402" level="INFO">Table cell contains 'Male'.</msg>
+<status status="PASS" starttime="20230806 21:40:03.382" endtime="20230806 21:40:03.402"/>
+</kw>
+<kw name="Table Cell Should Contain" library="SeleniumLibrary">
+<arg>locator=//div/table</arg>
+<arg>row=5</arg>
+<arg>column=2</arg>
+<arg>expected=${phone_num}</arg>
+<doc>Verifies table cell contains text ``expected``.</doc>
+<msg timestamp="20230806 21:40:03.421" level="INFO">Table cell contains '0987654321'.</msg>
+<status status="PASS" starttime="20230806 21:40:03.402" endtime="20230806 21:40:03.421"/>
+</kw>
+<kw name="Table Cell Should Contain" library="SeleniumLibrary">
+<arg>locator=//div/table</arg>
+<arg>row=6</arg>
+<arg>column=2</arg>
+<arg>expected=11 September,2040</arg>
+<doc>Verifies table cell contains text ``expected``.</doc>
+<msg timestamp="20230806 21:40:03.440" level="INFO">Table cell contains '11 September,2040'.</msg>
+<status status="PASS" starttime="20230806 21:40:03.421" endtime="20230806 21:40:03.440"/>
+</kw>
+<kw name="Table Cell Should Contain" library="SeleniumLibrary">
+<arg>locator=//div/table</arg>
+<arg>row=7</arg>
+<arg>column=2</arg>
+<arg>expected=Computer Science</arg>
+<doc>Verifies table cell contains text ``expected``.</doc>
+<msg timestamp="20230806 21:40:03.458" level="INFO">Table cell contains 'Computer Science'.</msg>
+<status status="PASS" starttime="20230806 21:40:03.440" endtime="20230806 21:40:03.458"/>
+</kw>
+<kw name="Table Cell Should Contain" library="SeleniumLibrary">
+<arg>locator=//div/table</arg>
+<arg>row=8</arg>
+<arg>column=2</arg>
+<arg>expected=AA</arg>
+<doc>Verifies table cell contains text ``expected``.</doc>
+<msg timestamp="20230806 21:40:03.652" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-147.png"&gt;&lt;img src="selenium-screenshot-147.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230806 21:40:03.653" level="FAIL">Table '//div/table' cell on row 8 and column 2 should have contained text 'AA' but it had 'Sports, Music'.</msg>
+<status status="FAIL" starttime="20230806 21:40:03.458" endtime="20230806 21:40:03.658"/>
+</kw>
+<kw name="Table Cell Should Contain" library="SeleniumLibrary">
+<arg>locator=//div/table</arg>
+<arg>row=9</arg>
+<arg>column=2</arg>
+<arg>expected=test.png</arg>
+<doc>Verifies table cell contains text ``expected``.</doc>
+<status status="NOT RUN" starttime="20230806 21:40:03.658" endtime="20230806 21:40:03.658"/>
+</kw>
+<kw name="Table Cell Should Contain" library="SeleniumLibrary">
+<arg>locator=//div/table</arg>
+<arg>row=10</arg>
+<arg>column=2</arg>
+<arg>expected=${address}</arg>
+<doc>Verifies table cell contains text ``expected``.</doc>
+<status status="NOT RUN" starttime="20230806 21:40:03.658" endtime="20230806 21:40:03.658"/>
+</kw>
+<kw name="Table Cell Should Contain" library="SeleniumLibrary">
+<arg>locator=//div/table</arg>
+<arg>row=11</arg>
+<arg>column=2</arg>
+<arg>expected=NCR Delhi</arg>
+<doc>Verifies table cell contains text ``expected``.</doc>
+<status status="NOT RUN" starttime="20230806 21:40:03.658" endtime="20230806 21:40:03.658"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230806 21:40:03.658" endtime="20230806 21:40:03.658"/>
+</kw>
+<status status="FAIL" starttime="20230806 21:39:54.703" endtime="20230806 21:40:03.659">Table '//div/table' cell on row 8 and column 2 should have contained text 'AA' but it had 'Sports, Music'.</status>
 </test>
 <kw name="Close Web" library="Resource" type="TEARDOWN">
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230715 23:49:11.164" endtime="20230715 23:49:12.122"/>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230806 21:40:03.659" endtime="20230806 21:40:04.566"/>
 </kw>
-<status status="PASS" starttime="20230715 23:49:11.164" endtime="20230715 23:49:12.122"/>
+<status status="PASS" starttime="20230806 21:40:03.659" endtime="20230806 21:40:04.566"/>
 </kw>
-<doc>Test TextBox Elements</doc>
-<status status="PASS" starttime="20230715 23:48:47.048" endtime="20230715 23:49:12.122"/>
+<doc>Input Form and verify value in table</doc>
+<status status="FAIL" starttime="20230806 21:39:43.481" endtime="20230806 21:40:04.566"/>
 </suite>
 <statistics>
 <total>
-<stat pass="5" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="5" fail="0" skip="0" id="s1" name="1 Text box">1 Text box</stat>
+<stat pass="3" fail="1" skip="0" id="s1" name="Practice Form">Practice Form</stat>
 </suite>
 </statistics>
 <errors>
