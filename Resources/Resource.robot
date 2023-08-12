@@ -7,8 +7,9 @@ Library  OperatingSystem
 
 *** Keywords ***
 Open Web
-    Open Browser       ${url}      firefox
+    Open Browser       ${url}      Chrome
 #    Maximize Browser Window
+#    Some File do not support headless bowser
 Close Web
     Close All Browsers
 
