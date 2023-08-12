@@ -73,6 +73,7 @@ Input Form
 #    Submit form
     Sleep   1s
     Press Keys  None    RETURN
+Verify content on table
 #    Verify values in table
     Wait Until Page Contains     Thanks for submitting the form
     Table Header Should Contain     //div/table    Label
