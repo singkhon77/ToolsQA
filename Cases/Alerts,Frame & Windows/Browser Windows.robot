@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation  Indentify Each Window
+Documentation  Indentify Each Window : Note This file must open in chrome
 Resource  ../../Resources/Resource.robot
 Suite Setup     Open Web
 Suite Teardown  Close Web
@@ -18,7 +18,6 @@ Go to Elements Menu
     Page Should Contain Element    //div/div/div[text()='Alerts, Frame & Windows']
     Page Should Contain     Please select an item from left to start practice
 Click Dynamic Properties tab
-#    Execute JavaScript    window.scrollTo(0,500)
     Click   //span[text()='Browser Windows']
     Page Should Contain Element   //div/div/div[1]/div[text()='Browser Windows']
 Check New Tab btn
