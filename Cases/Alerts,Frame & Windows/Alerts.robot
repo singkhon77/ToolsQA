@@ -13,11 +13,11 @@ Suite Teardown  Close Web
 *** Test Cases ***
 Verify Home Page
     Wait Until Page Contains Element    //a/img[@src='/images/Toolsqa.jpg']
-Go to Elements Menu
+Go to Alert,Frame&Windows Menu
     Click   //div/h5[text()='Alerts, Frame & Windows']
     Page Should Contain Element    //div/div/div[text()='Alerts, Frame & Windows']
     Page Should Contain     Please select an item from left to start practice
-Click Dynamic Properties tab
+Click Alerts tab
     Click   //span[text()='Alerts']
     Page Should Contain Element   //div/div/div[1]/div[text()='Alerts']
 See Alert btn

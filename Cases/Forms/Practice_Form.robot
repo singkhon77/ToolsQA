@@ -20,11 +20,11 @@ ${upload_file_name}     test.png
 *** Test Cases ***
 Verify Home Page
     Wait Until Page Contains Element    //a/img[@src='/images/Toolsqa.jpg']
-Go to Elements Menu
+Go to Forms Menu
     Click   //div/h5[text()='Forms']
     Page Should Contain Element    //div/div/div[text()='Forms']
     Page Should Contain     Please select an item from left to start practice
-Click Dynamic Properties tab
+Click Practice_Form tab
     Execute JavaScript    window.scrollTo(0,500)
     Click   //span[text()='Practice Form']
     Page Should Contain Element   //div/div/div[1]/div[text()='Practice Form']
